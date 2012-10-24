@@ -2,4 +2,6 @@
 *.aux
 *.dvi
 *.toc
+*.bbl
+*.blg
 tex/main.pdf
