@@ -3,11 +3,9 @@
 % ---------------------------------------------------------------------
 \documentclass[12pt,a4paper,finnish,oneside]{article}
 %\documentclass[12pt,a4paper,finnish,twoside]{article}
-%\documentclass[12pt,a4paper,finnish,oneside,draft]{article} % luonnos, nopeampi
+%\documentclass[12pt,a4paper,finnish,oneside,draft]{article}
 
-% Valitse 'input encoding':
-%\usepackage[latin1]{inputenc} % merkistökoodaus, jos ISO-LATIN-1:tä.
-\usepackage[utf8]{inputenc}   % merkistökoodaus, jos käytetään UTF8:a
+\usepackage[utf8]{inputenc}
 
 % Valitse 'output/font encoding':
 %\usepackage[T1]{fontenc}      % korjaa ääkkösten tavutusta, bittikarttana
@@ -21,24 +19,18 @@
 
 % Muita paketteja:
 %\usepackage{alltt}
-%\usepackage{amsmath}   % matematiikkaa
-%\usepackage{calc}      % käytetään laskurien (counter) yhteydessä (tiedot.tex)
+%\usepackage{amsmath}
+\usepackage{calc}      % käytetään laskurien (counter) yhteydessä (tiedot.tex)
 %\usepackage{eurosym}   % eurosymboli: \euro{}
 \usepackage{url}       % \url{...}
 \usepackage{listings}  % koodilistausten lisääminen
 %\usepackage{algorithm} % algoritmien lisääminen kelluvina
 %\usepackage{algorithmic} % algoritmilistaus
-\usepackage{hyphenat}  % tavutuksen viilaamiseen liittyvä (hyphenpenalty,...)
+\usepackage{hyphenat}
 %\usepackage{supertabular,array}  % useampisivuinen taulukko
 
-% Koko dokumentin kattavia asetuksia:
-
-% Tavutettavia sanoja:
-%\hyphenation{vää-rin me-ne-vi-en eri-kois-ten sa-no-jen tavu-raja-ehdo-tuk-set}
-% Huomaa, että ylläoleva etsii tarkalleen kyseisiä merkkijonoja, eikä
-% ymmärrä taivutuksia. Paikallisesti tekstin seassa voi myös ta\-vut\-taa.
-
-% Rangaistaan tavutusta (ei toimi?! Onko hyphenat-paketti asennettu?)
+% Tavutus.
+%\hyphenation{vää-rin me-ne-vi-en sa-no-jen tavu-raja-ehdo-tuk-set}
 \hyphenpenalty=10000   % rangaistaan tavutuksesta, 10000=ääretön
 \tolerance=1000        % siedetään välejä riveillä
 % titlesec-paketti auttaa, jos tämän mukana menee sekaisin
@@ -47,7 +39,6 @@
 % Pakettiin natbib.sty/aaltosci.bst liittyen katso esim. 
 % http://merkel.zoneo.net/Latex/natbib.php
 % jossa selitykset citep, citet, bibpunct, jne.
-% Valitse alla olevista tai muokkaa:
 \bibpunct{(}{)}{;}{a}{,}{,}    % a = tekijä-vuosi (author-year)
 %\bibpunct{[}{]}{;}{n}{,}{,}    % n = numero [1],[2] (numerical style)
 
@@ -62,62 +53,39 @@
 \begin{document}
 
 \selectlanguage{finnish}
-
 \pagestyle{plain}
 \pagenumbering{arabic}
 
-% ---------------------------------------------------------------------
-% -------------- Luettelosivut alkavat --------------------------------
-% ---------------------------------------------------------------------
-
-% -------------- Nimiölehti ja sen tiedot -----------------------------
-
 \author{Kim Dikert}
 
-% Otsikko nimiölehdelle. Yleensä sama kuin seuraavana oleva \TITLE, 
-% mutta jos nimiölehdellä tarvetta "kaksiosaiselle" kaksiriviselle
 \title{Ketterien kehitysmenetelmien käyttöönotto suurissa organisaatioissa}
 
-% 2-osainen otsikko:
-%\title{\LaTeX{}-pohja kandidaatintyölle \\[5mm] Pitkiä rivejä kokeilun vuoksi.}
 
 % Otsikko tiivistelmään. Jos lisäksi engl. tiivistelmä, niin viimeisin:
-\TITLE{\LaTeX{}-pohja kandidaatintyötä varten ohjeiden kera ja varuilta %
-kokeillaan vähän ylipitkää otsikkoa}
-
-%\TITLE{\LaTeX{} för kandidatseminariet med jättelång rubrik som fortsätter och
-% fortsätter ännu}
+\TITLE{Ketterien kehitysmenetelmien käyttöönotto suurissa organisaatioissa}
 \ENTITLE{\LaTeX{} template for Bachelor thesis with a pretty long title %
 line which continues ynd continues}
 
-% 2-osainen otsikko korvataan täällä esim. pisteellä:
+% Jos tarvetta 2-osaiselle otsikolle:
+%\title{\LaTeX{}-pohja kandidaatintyölle \\[5mm] Pitkiä rivejä kokeilun vuoksi.}
 %\TITLE{\LaTeX{}-pohja kandidaatintyölle. Pitkiä rivejä kokeilun vuoksi.}
 
 % Ohjaajan laitos suomi/ruotsi ja tarvittaessa eng (tiivistelmän kieli/kielet)
-\DEPT{Poimi tähän ohjaajasi laitos, DEPT, main.tex}
-% suomi:
-%\DEPT{Tietotekniikan laitos}               % T
-%\DEPT{Tietojenkäsittelytieteen laitos}     % TKT
-%\DEPT{Mediatekniikan laitos}               % ME
-% ruotsi:
-%\DEPT{Institutionen för datateknik}        % T
-%\DEPT{Institutionen för datavetenskap}     % TKT
-%\DEPT{Institutionen för mediateknik}       % ME
-% englanti:
-%\ENDEPT{Department of Computer Science Engineering}     % T
-%\ENDEPT{Department of Information and Computer Science} % TKT
-%\ENDEPT{Department of Media Technology}                 % ME
+\DEPT{Tietotekniikan laitos}
+%\DEPT{Tietotekniikan laitos}
+%\DEPT{Institutionen för datateknik}
+%\ENDEPT{Department of Computer Science Engineering}
 
 % Vuosi ja päivämäärä, jolloin työ on jätetty tarkistettavaksi.
-\YEAR{2011}
-\DATE{28. marraskuuta 2011}
-%\DATE{31. helmikuuta 2011}
-%\DATE{Den 31 februari 2011}
-\ENDATE{February 31, 2011}
+\YEAR{2012}
+\DATE{XX. marraskuuta 2012}
+%\DATE{31. helmikuuta 2012}
+%\DATE{Den 31 februari 2012}
+\ENDATE{November XX, 2012}
 
 % Kurssin vastuuopettaja ja työsi ohjaaja(t)
 \SUPERVISOR{Ma professori Tomi Janhunen}
-\INSTRUCTOR{Ohjaajantitteli Sinun Ohjaajasi}
+\INSTRUCTOR{TkT Maria Paasivaara}
 %\INSTRUCTOR{Ohjaajantitteli Sinun Ohjaajasi, ToinenTitt Matti Meikäläinen}
 % DI       // på svenska DI diplomingenjör
 % TkL      // TkL teknologie licentiat
@@ -127,99 +95,61 @@ line which continues ynd continues}
 % 
 % Jos tiivistelmä englanniksi, niin:
 \ENSUPERVISOR{Professor (pro tem) Tomi Janhunen}
-\ENINSTRUCTOR{Your instructor, titleOfInstructor}
+\ENINSTRUCTOR{Maria Paasivaara, D.Sc.}
 % M.Sc. (Tech)  // M.Sc. (Eng)
 % Lic.Sc. (Tech)
 % D.Sc. (Tech)   // FT filosofian tohtori, PhD Doctor of Philosophy
 % Docent
 % Professor
 
-% Kirjoita tänne HOPS:ssa vahvistettu pääaineesi.
-% Pääainekoodit TIK-opinto-oppaasta.
-
 \PAAAINE{Ohjelmistotuotanto ja -liiketoiminta}
 \CODE{T3003}
 
-% Avainsanat tiivistelmään. Tarvittaessa myös englanniksi:
+\KEYWORDS{agile, ketterä, ohjelmistokehitys, organisaatiomuutos}
 
-\KEYWORDS{avain, sanoja, niitäkin, tähän, vielä, useampi, vaikkei, %
-niitä, niin, montaa, oikeasti, tarvitse}
-\ENKEYWORDS{key, words, the same as in FIN/SWE}
+\ENKEYWORDS{agile, software development, large scale, transformation}
 
-% Tiivistelmään tulee opinnäytteen sivumäärä.
-% Kirjoita lopulliset sivumäärät käsin tai kokeile koodia. 
-%
-% Ohje 29.8.2011 kirjaston henkilökunnalta:
-%   - yhteissivumäärä nimiölehdeltä ihan loppuun
-%   - "kaikkien yksinkertaisin ja yksiselitteisin tapa"
-%
-% VANHA // Ohje 14.11.2006, luku 4.2.5:
-% VANHA // - sivumäärä = tekstiosan (alkaen johdantoluvusta) ja 
-% VANHA //  lähdeluettelon sivumäärä, esim. "20"
-% VANHA // - jos liitteet, niin edellisen lisäksi liitteiden sivumäärä,
-% VANHA //  tyyli "20 + 5", jossa 5 sivua liitteitä 
-% VANHA // - HUOM! Tässä oletuksena sivunumerointi alkaa nimiölehdestä 
-% VANHA //  sivunumerolla 1. %   Toisin sanoen, viimeisen lähdeluettelosivun 
-% VANHA //  sivunumero EI ole sivujen määrä vaan se pitää laskea tähän käsin
+% Kaikki sivut laskettuna nimiölehdestä lähdeluettelon tai 
+% mahdollisten liitteiden loppuun. --> Miten liitteet (esim. "20 + 5")?
+\PAGES{XX}
 
-\PAGES{Kirjoita tähän oikea määrä, tässä esimerkissä 23}
-%\PAGES{23}  % kaikki sivut laskettuna nimiölehdestä lähdeluettelon tai 
-             % mahdollisten liitteiden loppuun. Tässä 23 sivua
+% ------------------------ Nimiölehti ---------------------------------
 
-%\thispagestyle{empty}  % nimiölehdellä ei ole sivunumerointia; tyylin mukaan ei tehdäkään?!
-
-\maketitle             % tehdään nimiölehti
+%\thispagestyle{empty}
+\maketitle
 
 % -------------- Tiivistelmä / abstract -------------------------------
-% Lisää abstrakti kandikielellä (ja halutessasi lisäksi englanniksi).
 
-% Edelleen sivunumerointiin. Eräs ohje käskee aloittaa sivunumeroiden
-% laskemisen nimiösivulta kuitenkin niin, että sille ei numeroa merkitä
-% (Kauranen, luku 5.2.2). Näin ollen ensimmäisen tiivistelmän sivunumero
-% on 2. \maketitle komento jotenkin kadottaa sivunumeronsa.
-\setcounter{page}{2}    % sivunumeroksi tulee 2
-
+\setcounter{page}{2}
 \input{luku_abstraktit}
-\newpage                       % pakota sivunvaihto
+\newpage
 
 % -------------- Sisällysluettelo / TOC -------------------------------
 
 \tableofcontents
-
 \label{pages:prelude}
-\clearpage                     % kappale loppuu, loput kelluvat tänne, sivunv.
-%\newpage
+\clearpage
 
 % -------------- Symboli- ja lyhenneluettelo -------------------------
-% Lyhenteet, termit ja symbolit.
-% Suositus: Käytä vasta kun paljon symboleja tai lyhenteitä.
 %
-\input{luku_lyhenteet} 
-%\clearpage                     % luku loppuu, loput kelluvat tänne
-\newpage
+%\input{luku_lyhenteet} 
+%\newpage
 
-
-% ---------------------------------------------------------------------
-% -------------- Tekstiosa alkaa --------------------------------------
-% ---------------------------------------------------------------------
+% ------------------------ Itse sisältö ------------------------------
 
 % Muutetaan tarvittaessa ala- ja ylätunnisteet
 %\pagestyle{headings}          % headeriin lisätietoja
 %\pagestyle{fancyheadings}     % headeriin lisätietoja
 %\pagestyle{plain}             % ei header, footer: sivunumero
-
-% Sivunumerointi, jos käytetty 'roman' aiemmin
-% \pagenumbering{arabic}        % 1,2,3, samalla alustaa laskurin ykköseksi
-% \thispagestyle{empty}         % pyydetty ensimmäinen tekstisivu tyhjäksi
+%\pagenumbering{arabic}        % 1,2,3, samalla alustaa laskurin ykköseksi
+%\thispagestyle{empty}         % pyydetty ensimmäinen tekstisivu tyhjäksi
 
 \input{luku_sisalto}
-
 \label{pages:text}
-\clearpage        % luku loppuu, loput kelluvat tänne, sivunvaihto
-%\newpage         % ellei ylempi tehoa, pakota lähdeluettelo alkamaan uudelta sivulta
+\clearpage
 
 
-% -------------- Lähdeluettelo / reference list -----------------------
+% -------------- Lähdeluettelo / reference list ----------------------
 
 % Viitetyylitiedosto aaltosci_t.bst; muokattu HY:n tktl-tyylistä.
 \bibliographystyle{aaltosci_t}
@@ -228,13 +158,10 @@ niitä, niin, montaa, oikeasti, tarvitse}
 \renewcommand{\refname}{Lähteet}  % article-tyyppisen
 %\renewcommand{\bibname}{Lähteet}  % jos olisi book, report-tyyppinen
 
-% Lisätään sisällysluetteloon
 \addcontentsline{toc}{section}{\refname}  % article
 %\addcontentsline{toc}{chapter}{\bibname}  % book, report
 
-% Määritä kaikki bib-tiedostot
 \bibliography{lahteet}
-%\bibliography{thesis_sources,ietf_sources}
 
 \label{pages:refs}
 \clearpage         % erotetaan mahd. liitteet alkamaan uudelta sivulta
@@ -244,9 +171,9 @@ niitä, niin, montaa, oikeasti, tarvitse}
 %
 %\appendix
 %\input{luku_liitteet}
-%
 %\label{pages:appendices}
-%
+
+
 % ---------------------------------------------------------------------
 
 \end{document}
