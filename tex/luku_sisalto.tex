@@ -9,17 +9,19 @@ mahdolliseksi ratkaisuksi toiminnan tehostamisessa.
 --> Ketterien ohjelmistokehitysmenetelmien on kuitenkin väitetty olevan
 soveltumattomia suurille yrityksille.
 
---> 
+--> Agiili on tehokkaampaa
+  * Empirical Studies on Quality in Agile Practices: A Systematic Literature Review; Dyba 2009
 
 --> Viittaus edellisten töiden puutteeseen??
 
---> Tämän työn tavoitteenna on esittää semisystemaattisen kirjallisuuskatsauksen
-tulokset -->
+--> Tämän työn tavoitte on esittää nykyinen tutkimuksen tila ketterien
+ohjelmistokehitysmenetelmien käyttöönotosta suurissa organisaatioissa. Tämä työ
+on toteutettu mukaillen jäejestelmällisen kirjallisuuskatsauksen muotoa, jotta
+lopputuloksena olisi mahdollisimman laaja ja puolueeton katsaus tutkimusalan
+nykytilaan.
 
---> Yhteenveto tuloksista
-
-(--> Yhteenveto johtopäätöksistä -- ei ollut suositeltu)
-
+Kirjallisuustutkimuksen tuloksena havaittiin että \ldots (yhteenveto tuloksista)
+(Yhteenveto johtopäätöksistä -- ei ollut suositeltu)
 
 
 \subsection{Työn rakenne (jätä pois yksinäinen otsikko\ldots)}
@@ -45,9 +47,14 @@ Vanhoja toimintamalleja:
 -- RUP
 -- CMMi
 
+--> Mitä näistä voi sanoa? --> Onko niitä edelleen käytössä?
+
 --> Yhteenveto ongelmista?
 
-
+--> Ihmisläheinen ''kaoottinen'' hallinta on välttämätöntä ohjelmistokehityksessä.
+Suunnitalmavetoinen ja hallintaan perustuva ohjaus ei voi toimia, sillä
+ohjelmistokehitys on aina lähempänä uuden tuotteen suunnittelua kuin
+tehdaslinjastoa vastaavaa toistuvaa prosessia. <Schwaber \& Beedle 2002>
 
 
 \subsection{Ketterät ohjelmistokenityksen menetelmät}
@@ -59,7 +66,8 @@ Verrattavia toimintamalleja:
 --> miten se suhteutuu agileen
 
 
-Oleellisia pointteja agilessa:
+--> Ketterät kehitysmallit pyrkivät tuomaan parannuksia perinteisiin
+ohjelmistokehityksen menetelmiin. --> Alla listattu mitä parannuksia voi olla
 
 -- Kommunikaation parantaminen
   * Dokumentaation vähentäminen
@@ -68,19 +76,24 @@ Oleellisia pointteja agilessa:
 
 -- Nopeampien muutosten salliminen
   * XP, Beck: Embracing change
-  * Nopeammat syklit (Poole)
- 
+  * Nopeammat syklit <Poole>
+
+==> Mukautuimskyky?
+
 -- Virheiden vähentäminen
+  * Virheprosessin keventäminen (Korhonen??) -- ja edut?
   * Kts. Ileva
+  * Kts.: Empirical Studies on Quality in Agile Practices: A Systematic Literature Review; Sfetsos
 
 --> Yhteenveto ongelmista ketteryyden soveltamiseen ??
-  * Lack of control?
+  * Lack of control? --> Pelko??
 
 
 \subsection{Aikaisemmat tutkimukset}
 
 --> Ei taida olla aikaisempia laajempia katsauksia
     * Miten perustellaan??
+    * Miten tarkastetaan edellinen tutkimus?
     
 --> 
 
@@ -110,14 +123,50 @@ menetelmillä voi aiheuttaa koordinaatiovaikeuksia.
 \section{Tutkimusmenetelmä}
 \label{sec:menetelma}
 
-\citep{refworks:148}
+Tässä työssä käytetty tutkimusmenetelmä myötäilee Kitchenhamin esittämää mallia
+ohjelmistotuotannon alan kirjallisuustutkimukseen. Valitun menetelmän tavoite on
+muodostaa yhtenäinen kuva tämänhetkisestä tutkimuksesta työn aihealueella.
+Kirjallisuustutkimuksen suorittaminen sisältää viisi pääasiallista vaihetta:
+hakujen suunnittelu, aineiston seulonta, aineiston laadun arviointi, tiedon
+poiminta sekä synteesin tekeminen. \citep{Kitchenham2007}
+
+Tässä luvussa esittelen miten olen soveltanut kirjallisuustutkimuksen menetelmän
+neljää ensimmäistä vaihetta. Luvussa \ref{sec:tulokset} esittelen tutkimusen
+synteesin tulokset. Järjestelmällisen kirjallisuustutkimukseen kuuluu lisäksi
+ulkopuolinen katselmointi ja systemaattinen tutkimusprotokollan seuraaminen
+\citep{Kitchenham2007}, mutta niiden soveltaminen ylittää tämän työn laajuuden.
+
+\subsection{Hakujen suunnittelu}
+Hakujen suunnittelulla tarkoitetaan käytettävien elektronisten aineistojen
+valintaa ja hakulausekkeiden muodostamista. Elektronisina aineistoina käytin
+seuraavia ohjelmistotuotannon alan julkaisuja hyvin kattavia tietokantoja:
+IEEExplore <link>, ACM <link>, Scopus (ScienceDirect??) <link>, ProQuest <link>.
+Näiden lisäksi suoritin haun <XP~Conference> arkistoon.
+
+Hakulausekkeet ovat boolen logiikalla muodostettavia lausekkeita, jotka
+määräävät avainsanat joiden tulee esiintyä hakutuloksissa. Hakulusekkeita varten
+määrittellään joukko näkökulmia jotka edustavat tutkimuskysymysten aihepiiriä.
+Jokaista näkökulmaa kohden etsitään yleisimmin käytettyjä avainsanoja sekä
+niiden synonyymejä. Lopuksi hakulausekkeet muunnetaan boolen lausekkeiksi
+käyttämällä \texttt{OR}-operattoria avainsanojen välillä, sekä
+\texttt{AND}-operaattoria näkökulmien välillä.
+Taulukko~\ref{table:hakulausekkeet} esittää tässä työssä käytetyt näkökulmat ja
+niitä vastaavat avainsanat.
+
+\begin{table}
+    \begin{tabular}{|l|l|}
+        \hline
+        Näkökulma           & Avainsanat   \\ \hline
+        Ketterät menetelmät & agile, scrum, lean, xp \\ 
+        Organisaatiomuutos  & transformation, transition, change, migration \\
+        Suuri organisaatio  & enterprise, organization, (large \texttt{AND} scale) \\
+        \hline
+    \end{tabular}
+	\caption{Hauissa käytetyt näkökulmat ja niitä vastaavat avainsanat}
+	\label{table:hakulausekkeet}
+\end{table}
 
 --> Esihaut: IEEE, hakusanat --> Löytyi muutamia jotka eivät ole mukana muuten?
-
---> Näkökulmat hakuun, vastaavat hakusanat ja boolean-lause: agile,
-transformation, large scale
-
---> Käytetyt hakukoneet
 
 --> Viitteiden validiteetti (kuinka suuri luottamus)
 
@@ -125,10 +174,14 @@ transformation, large scale
 
 --> ''Data extraction form''
 
+--> Data synthesis
+
 % --------------------------------------------------------------------
 
 \section{Tulokset}
 \label{sec:tulokset}
+
+--> ''Data synthesis'' \citep{Kitchenham2007}
 
 --> Millä aikavälillä tutkimuksia on tehty
 
