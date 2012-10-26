@@ -1,17 +1,27 @@
 % --------------------------------------------------------------------
 
+\textbf{Huomautuksia arvioijalle}
+
+Symbolilla --> merkitsemäni kohdat ovat ideoita sisällöstä. Näiden olisi
+kuitenkin tarkoitus olla loogisessa järjestyksessä ja johdatella sisältöä.
+
+Olen merkinnyt kulmasulkeilla < > viitteet jotka toistaiseksi puuttuu.
+
 \section{Johdanto}
 
 --> yritykset etsivät jatkuvasti tapoja parantaa toimintaansa (kiristyvässä
 kilpailutilanteessa). --> Tämä on nostanut ketterät ohjelmistomenetelmät
 mahdolliseksi ratkaisuksi toiminnan tehostamisessa.
 
---> Ketterien ohjelmistokehitysmenetelmien on kuitenkin väitetty olevan
-soveltumattomia suurille yrityksille.
+--> Suunniteltu pienille tiimeille --> Ketterien ohjelmistokehitysmenetelmien on
+kuitenkin väitetty olevan soveltumattomia suurille yrityksille. --> Vai onko
+väitetty?? Pikemminkin vaan ehkä todettu että isot ovet erialisia kuin pienet
+organisaatiot, ja sen takia ei käy tms.
 
 --> Agiili on tehokkaampaa
-  * Empirical Studies on Quality in Agile Practices: A Systematic Literature Review; Dyba 2009
+  * <Empirical Studies on Quality in Agile Practices: A Systematic Literature Review; Dyba 2009>
 
+--> Johdannossa: Minkä takia tämä on mielenkiintoista? 
 --> Viittaus edellisten töiden puutteeseen??
 
 --> Tämän työn tavoitte on esittää nykyinen tutkimuksen tila ketterien
@@ -21,10 +31,7 @@ lopputuloksena olisi mahdollisimman laaja ja puolueeton katsaus tutkimusalan
 nykytilaan.
 
 Kirjallisuustutkimuksen tuloksena havaittiin että \ldots (yhteenveto tuloksista)
-(Yhteenveto johtopäätöksistä -- ei ollut suositeltu)
 
-
-\subsection{Työn rakenne (jätä pois yksinäinen otsikko\ldots)}
 
 Tämä työ on jaoteltu seuraavasti:
 Seuraavassa luvussa esittelen tutkimuksen taustan ja määrittelen työn
@@ -37,17 +44,22 @@ yhteenvedon työstä.
 
 % --------------------------------------------------------------------
 
-\section{Työn taustat ja tavoitteet}
+\section{Aikaisempi tutkimus}
 \label{sec:tausta}
 
-\subsection{Perinteiset ohjelmistokenityksen menetelmät}
+--> Katso ''tätä lähellä olevia''
+
+--> Miksi ketteriin on siirrytty?
 
 Vanhoja toimintamalleja:
 -- waterfall
 -- RUP
 -- CMMi
-
+--> Älä selitä näistä -- ehkä voi mainita, muttei selitä.
 --> Mitä näistä voi sanoa? --> Onko niitä edelleen käytössä?
+
+--> Jos vesiputousmalli on kerran kökkö, niin miksi isot organisaatiot ovat
+ajautuneet käyttämään sitä (90-luvulla)?? --> Mistä viite\ldots?
 
 --> Yhteenveto ongelmista?
 
@@ -61,10 +73,7 @@ tehdaslinjastoa vastaavaa toistuvaa prosessia. <Schwaber \& Beedle 2002>
 
 --> mitä ovat ketterät menetelmät
 
-Verrattavia toimintamalleja:
---> Myös lean (Poppendick) on mahdollista
---> miten se suhteutuu agileen
-
+--> Mikä on organisaatiomuutos?
 
 --> Ketterät kehitysmallit pyrkivät tuomaan parannuksia perinteisiin
 ohjelmistokehityksen menetelmiin. --> Alla listattu mitä parannuksia voi olla
@@ -88,14 +97,25 @@ ohjelmistokehityksen menetelmiin. --> Alla listattu mitä parannuksia voi olla
 --> Yhteenveto ongelmista ketteryyden soveltamiseen ??
   * Lack of control? --> Pelko??
 
+Verrattavia toimintamalleja:
+--> Myös lean (Poppendick) on mahdollista
+--> miten se suhteutuu agileen
 
 \subsection{Aikaisemmat tutkimukset}
 
 --> Ei taida olla aikaisempia laajempia katsauksia
     * Miten perustellaan??
     * Miten tarkastetaan edellinen tutkimus?
-    
---> 
+
+
+% --------------------------------------------------------------------
+
+\section{Tutkimusmenetelmä}
+\label{sec:menetelma}
+
+Tässä luvussa esittelen työn lähtökohdat tutkimuskysymysten sekä työn rajauksen
+näkökulmista. Esittelen myös järjestelmällisen kirjallisuustutkimuksen
+menetelmän, ja kuvaan miten olen soveltanut sitä tähän työhön.
 
 \subsection{Tutkimuskysymykset}
 
@@ -111,29 +131,30 @@ Tutkimuskysymys on edelleen jaettu kolmeen alla listattuun alakysymykseen.
 
 \subsection{Työn rajaus}
 
---> Vain isot organisaatiot
---> Mikä on iso organisaatio? --> Vapaasit määriteltynä: sellainen jossa voidaan
-olettaa että perinetisen projektisuunnittelun korvaaminen ketterillä
-menetelmillä voi aiheuttaa koordinaatiovaikeuksia.
+Rajaan kirjallisuustutkimuksessa huomioitavat ensisijaiset lähteet materiaalin
+julkaisutyypin, organisaation koon sekä muutosnäkökulman perusteella.
+Julkaisutyyppinä huomioin ainoastaan empiirisiä tutkimuksia, eli
+tapaustutkimuksia ja kokemusraportteja. Tutkitun organisaation tulee olla
+riittävän iso, jotta voidaan katsoa että ketterien menetelmien soveltamisen
+erityishaasteet isoissa organisaatioissa tulevat esille <Lindvall 2004>. Olen
+rajannut ulos tutkimuksia jotka käsittelevät vain yksittäisiä tiimejä.
+Organisaatiolla on myös oltava määritelty aikaisempi toimintamalli siten, että
+tutkimuksessa esitetään suunnitelmallinen muutos ketteriin menetelmiin.
+Tarkasteltavissa tutkimuksissa ei ole syytä rajata uutta toimintamallia
+ketteriin menetelmiin, sillä käsitykset ketteristä menetelmistä saattavat
+vaihdella, tai muunnos saattaa olla vielä kesken.
 
---> Organisaatiossa on oltava olemassa oleva toimintamalli
+\subsection{Järjestelmällisen kirjallisuuskatsauksen menetelmä}
 
-% --------------------------------------------------------------------
+Tässä työssä käyttämäni tutkimusmenetelmä myötäilee Kitchenhamin esittämää
+mallia ohjelmistotuotannon alan kirjallisuustutkimukseen. Valitun menetelmän
+tavoite on muodostaa yhtenäinen kuva tämänhetkisestä tutkimuksesta työn
+aihealueella. Kirjallisuustutkimuksen suorittaminen sisältää viisi pääasiallista
+vaihetta: hakujen suunnittelu, aineiston seulonta, aineiston laadun arviointi,
+tiedon poiminta sekä synteesin tekeminen. \citep{Kitchenham2007}
 
-\section{Tutkimusmenetelmä}
-\label{sec:menetelma}
-
-Tässä työssä käytetty tutkimusmenetelmä myötäilee Kitchenhamin esittämää mallia
-ohjelmistotuotannon alan kirjallisuustutkimukseen. Valitun menetelmän tavoite on
-muodostaa yhtenäinen kuva tämänhetkisestä tutkimuksesta työn aihealueella.
-Kirjallisuustutkimuksen suorittaminen sisältää viisi pääasiallista vaihetta:
-hakujen suunnittelu, aineiston seulonta, aineiston laadun arviointi, tiedon
-poiminta sekä synteesin tekeminen. \citep{Kitchenham2007}
-
-Tässä luvussa esittelen miten olen soveltanut kirjallisuustutkimuksen menetelmän
-neljää ensimmäistä vaihetta. Luvussa \ref{sec:tulokset} esittelen tutkimusen
-synteesin tulokset. Järjestelmällisen kirjallisuustutkimukseen kuuluu lisäksi
-ulkopuolinen katselmointi ja systemaattinen tutkimusprotokollan seuraaminen
+Järjestelmällisen kirjallisuustutkimukseen kuuluu lisäksi ulkopuolinen
+katselmointi ja systemaattinen tutkimusprotokollan seuraaminen
 \citep{Kitchenham2007}, mutta niiden soveltaminen ylittää tämän työn laajuuden.
 
 \subsection{Hakujen suunnittelu}
@@ -166,38 +187,100 @@ niitä vastaavat avainsanat.
 	\label{table:hakulausekkeet}
 \end{table}
 
+\subsection{Aineiston seulonta}
+
+Kun suunnitellut haut on suoritettu on koottujen viitteiden joukosta sulottava
+ne tutkimukset jotka ovat oleellisia kirjallisuustutkimuksen kannalta. Tämän
+työn puitteissa suoritin seulonnan kahdella tasolla: ensiksi otsikon
+perusteella, ja sitten tiivistelmän perusteella. Otsikon perusteella hylkäsin
+vain selkeästi aihealueeseen kuulumattomat lähteet, sillä havaitsin että useat
+oleellisilta vaikuttavat työt olivat otsikoitu epäselvästi. Otsikon perusteella
+valitsin 100 lähdettä. Tiivistelmän perusteella arvioin lähteen kolmesta
+näkökulmasta: ketterä ohjelmistokehitys, suuri organisaatio tai monta tiimiä ja
+toimintatapojen muutos. Tarkempaan tarkasteluun valitsin vain ne lähteet jotka
+tiivistelmän perusteella käsitelivät kaikkia kolmea näkökulmaa. Tällä
+menetelmällä valitsin tarkempaan tarkasteluun 33 lähdettä.
+
+\subsection{Tiedon poiminta}
+
+Valitut ensisijaiset tutkimukset arvioidaan poimimalla niistä oleelliset tiedot.
+Tiedon poimintaan käytetään tiedonkeruulomaketta, joka täytetään kutakin
+tarkempaan tarkasteluun valittua lähdettä kohden. Tässä työssä käytin taulukossa
+\ref{table:dataform} listattuja kenttiä.
+
+\begin{table}
+    \begin{tabular}{|l|l|}
+        \hline
+        Transformation mentioned in text (Y/N) &
+        Large scale mentioned in text (Y/N) \\
+        Is empirical case study (Y/N) &
+        Is industry experience report (Y/N) \\
+        Has listing of practices (Y/N) &
+        Used research method (Y/N) \\
+        Relevance to this review (1-5) & \\
+        Objective of research (or publication) &
+        Research method \\
+        Author bias &
+        Validity threats \\
+        Organization size &
+        Time of transformation \\
+        Initial state of organization &
+        Why was the change initiated \\
+        How was the change conducted &
+        What is agility? / Which agile paractices are used? \\
+        Findings / lessons learned &
+        Good practices validated or suggested by study \\
+        Reported challenges &
+        Satisfaction after transformation \\
+        Effect on organization &
+        Measurements as results (quantitative or other) \\
+        Other notes &
+        Notable references \\
+        \hline
+    \end{tabular}
+    \caption{Työssä käytetyt tiedonkeruulomakkeen kentät}
+    \label{table:dataform}
+\end{table}
+
+
+\vspace{1cm}
+\textbf{Muita juttuja / ideoita ??}
+
 --> Esihaut: IEEE, hakusanat --> Löytyi muutamia jotka eivät ole mukana muuten?
 
 --> Viitteiden validiteetti (kuinka suuri luottamus)
-
---> Seulontamenetelmä: Otsikko ja abstrakti --> Kokoteksti
-
---> ''Data extraction form''
-
---> Data synthesis
 
 % --------------------------------------------------------------------
 
 \section{Tulokset}
 \label{sec:tulokset}
 
---> ''Data synthesis'' \citep{Kitchenham2007}
+Tässä luvussa esittelen synteesin ensisijaisista tutkimuksista poimituista
+tiedoista. Luvussa \ref{sec:menetelma} esittelin järjestelmällisen
+kirjallisuustutkimuksen menetelmän ja listasin sen avulla lähdemateriaalista
+poimitut tiedot \citep{Kitchenham2007}.
 
 --> Millä aikavälillä tutkimuksia on tehty
 
+--> Suosituimmat syyt lähteä muutokseen
+
+--> Onko muutoksen toteuttamisessa joitain yleistettäviä piirteitä?
+
+--> 
+
 % --------------------------------------------------------------------
 
-\section{Johtopäätökset}
+\section{Johtopäätökset ja yhteenveto}
 \label{sec:johtopaatokset}
 
+--> Muistutus työon tavoitteista (sidoksisuus johdantoon)
 
+--> Yhteenveto tuloksista, ja tulosten merkitys
+--> Suositus toimnepiteisiin??
 
+--> Tulosten soveltuvuus
+--> Tutkimuksen arviointi
 
-% --------------------------------------------------------------------
-
-\section{Yhteenveto}
-\label{sec:yhteenveto}
-
-
+--> Jatkotutkimukset
 
 
