@@ -8,42 +8,41 @@ loogisessa järjestyksessä ja muutenkin olla järkeviä.
 
 Olen merkinnyt kulmasulkeilla < > viitteet jotka toistaiseksi puuttuu läteistä.
 
+\newpage
+
 \section{Johdanto}
 
 Ohjelmistoalan kilpailutilanteen kiristyessä yritykset etsivät jatkuvasti tapoja
 tehostaa toimintaansa. Ketterien menetelmien on todettu parantavan tehokkuutta
 sekä laatua \citep{Livermore2008}, mikä nostaa ne houkuttelevaksi vaihtoehdoksi
 tehostamista tavoitteleville yrityksille. Ketterien menetelmien käyttöönotto on
-kuitenkin haastavaa suurissa yrityksissä \citep{Dyba2009}, sillä alun perin
+kuitenkin haastavaa suurissa yrityksissä \citep{Dyba2009}. Alun perin
 pieniin projekteihin ja tiimeihin\footnote{Selitys lainasanasta tiimi\ldots}
 suunnitellut mallit ovat osoittautuneet vaikeiksi soveltaa suuremmassa
 mittakaavassa \citep{Boehm2005}.
 
 Suuret yritykset toimivat usein perinteisten ohjelmistotuotannon mallien
-mukaisesti. Nämä mallit ovat suunnitelmavetoisia ja pyrkivät optimoimaan
-toimintaa tarkalla prosessien määrittelyllä. --> tämänlainen lähtökohta ei
-mumminkaan toimi... \citep{Schwaber2002}
---> jotain näkökulmia miksi skaalaus on vaikeaa?
+mukaisesti. Nämä mallit pyrkivät optimoimaan toimintaa tarkalla suunnittelulla
+ja prosessien määrittelyllä. Tämänlainen lähtökohta on kuitenkin soveltumaton
+ohjelmistosuunnittelussa, sillä kehitysprojekteissa tulee lähes poikkeuksetta
+tilanteita joita on mahdotonta tai liian työlästä ennustaa \citep{Schwaber2002}.
+Suurimpia ongelmia suunnitelmavetoisissa menetelmissä on vaatimusten muuttamisen
+korkea hinta sekä myöhäinen palaute tuotteen laadusta \citep{Petersen2010}.
+Pitkät julkaisuvälit, muutoksiin vastaamisen kalleus, sekä etäisyys asiakkaista
+heikentävät yritysten kilpailukykyä. Apua näihin ongelmiin toivotaan löytyvän
+ketterien kehitysmallien soveltamisella.
 
---> Suunniteltu pienille tiimeille --> Ketterien ohjelmistokehitysmenetelmien on
-kuitenkin väitetty olevan soveltumattomia suurille yrityksille. --> Vai onko
-väitetty?? Pikemminkin vaan ehkä todettu että isot ovet erialisia kuin pienet
-organisaatiot, ja sen takia ei käy tms.
-
---> Agiili on tehokkaampaa
-  * <Empirical Studies on Quality in Agile Practices: A Systematic Literature Review; Panagiotis 2010>
-
---> Johdannossa: Minkä takia tämä on mielenkiintoista? 
---> Viittaus edellisten töiden puutteeseen??
-
---> Tämän työn tavoitte on esittää nykyinen tutkimuksen tila ketterien
-ohjelmistokehitysmenetelmien käyttöönotosta suurissa organisaatioissa. Tämä työ
-on toteutettu mukaillen jäejestelmällisen kirjallisuuskatsauksen muotoa, jotta
-lopputuloksena olisi mahdollisimman laaja ja puolueeton katsaus tutkimusalan
-nykytilaan.
-
-Kirjallisuustutkimuksen tuloksena havaittiin että \ldots (yhteenveto tuloksista)
-
+Tämän työn tavoitte on kartoittaa nykyinen tutkimuksen tila ketterien
+ohjelmistokehitysmenetelmien käyttöönotosta suurissa organisaatioissa. Ketterien
+meneteilmien käyttöönotosta on olemassa tutkimuksia, mutta ne keskittyvät
+enimmäkseen pieniin organisaatioihin tai yksittäisiin tiimeihin. Suuret
+organisaatiot mukautuvat uusiin menetelmiin hitaammin, mikä voidaan olettaa
+syyksi siihen että laajaa tutkimusta suuren mittakaavan ketterästä muutoksesta
+ei ole aikaisemmin tehty. Tämä työ on toteutettu mukaillen jäejestelmällisen
+kirjallisuustutkimuksen muotoa, kartoittaen olemassa olevia tapaustutkimuksia ja
+kokemusraportteja. Työ osoittaa että ketterien kehitysmenetelmien käyttöönotosta
+isoissa organisaatioissa on olemassa riittävästi ensisijaisia tutkimuksia
+kirjallisuustutkimukseen.
 
 Tämä työ on jaoteltu seuraavasti:
 Seuraavassa luvussa esittelen tutkimuksen taustan ja määrittelen työn
@@ -56,10 +55,20 @@ yhteenvedon työstä.
 
 % --------------------------------------------------------------------
 
-\section{Aikaisempi tutkimus}
+\section{Liittyvä tutkimus}
 \label{sec:tausta}
 
+--> ''Motivation and background''??
+
 --> Katso ''tätä lähellä olevia'' tutkimuksia, esim. 
+
+--> Suunniteltu pienille tiimeille --> Ketterien ohjelmistokehitysmenetelmien on
+kuitenkin väitetty olevan soveltumattomia suurille yrityksille. --> Vai onko
+väitetty?? Pikemminkin vaan ehkä todettu että isot ovet erialisia kuin pienet
+organisaatiot, ja sen takia ei käy tms.
+
+--> Agiili on tehokkaampaa
+  * <Empirical Studies on Quality in Agile Practices: A Systematic Literature Review; Panagiotis 2010>
 
 --> Miksi ketteriin on siirrytty?
 
@@ -115,9 +124,8 @@ Verrattavia toimintamalleja:
 
 \subsection{Aikaisemmat tutkimukset}
 
---> Ei taida olla aikaisempia laajempia katsauksia
-    * Miten perustellaan??
-    * Miten tarkastetaan edellinen tutkimus?
+--> Ei ole aikaisempia laajempia katsauksia.
+--> Tämä on selvinnyt liittyvien tutkimusten kartoittamisen myötä
 
 
 % --------------------------------------------------------------------
@@ -146,15 +154,15 @@ Tutkimuskysymys on edelleen jaettu kolmeen alla listattuun alakysymykseen.
 Rajaan kirjallisuustutkimuksessa huomioitavat ensisijaiset lähteet materiaalin
 julkaisutyypin, organisaation koon sekä muutosnäkökulman perusteella.
 Julkaisutyyppinä huomioin ainoastaan empiirisiä tutkimuksia, eli
-tapaustutkimuksia ja kokemusraportteja. Tutkitun organisaation tulee olla
+tapaustutkimuksia, sekä kokemusraportteja. Tutkitun organisaation tulee olla
 riittävän iso, jotta voidaan katsoa että ketterien menetelmien soveltamisen
-erityishaasteet isoissa organisaatioissa tulevat esille <Lindvall 2004>. Olen
-rajannut ulos tutkimuksia jotka käsittelevät vain yksittäisiä tiimejä.
+erityishaasteet isoissa organisaatioissa tulevat esille \citep{Lindvall2004}.
+Olen rajannut ulos tutkimukset jotka käsittelevät vain yksittäisiä tiimejä.
 Organisaatiolla on myös oltava määritelty aikaisempi toimintamalli siten, että
 tutkimuksessa esitetään suunnitelmallinen muutos ketteriin menetelmiin.
-Tarkasteltavissa tutkimuksissa ei ole syytä rajata uutta toimintamallia
-ketteriin menetelmiin, sillä käsitykset ketteristä menetelmistä saattavat
-vaihdella, tai muunnos saattaa olla vielä kesken.
+Muunnoksen lopputilaa tai organisaation uutta toimintamallia ei ole syytä rajata
+mihinkään erityiseen ketterään menetelmään, sillä käsitykset ketteristä
+menetelmistä saattavat vaihdella tai muunnos saattaa olla vielä kesken.
 
 \subsection{Järjestelmällisen kirjallisuuskatsauksen menetelmä}
 
@@ -250,7 +258,10 @@ tarkempaan tarkasteluun valittua lähdettä kohden. Tässä työssä käytin tau
         Notable references \\
         \hline
     \end{tabular}
-    \caption{Työssä käytetyt tiedonkeruulomakkeen kentät}
+    \caption{Työssä käytetyt tiedonkeruulomakkeen kentät. Kentät merkinnällä
+    (Y/N) ovat kyllä/ei muotoisia kenttiä. Kentät merkinnällä (1-5) ovat
+    pisteasteikon muodossa olevia kenttiä. Muut kentät ovat vapaamuotoisia
+    tekstikenttiä.}
     \label{table:dataform}
 \end{table}
 
