@@ -8,6 +8,9 @@ loogisessa järjestyksessä ja muutenkin olla järkeviä.
 
 Olen merkinnyt kulmasulkeilla < > viitteet jotka toistaiseksi puuttuu lähteistä.
 
+Olen pyrkinyt muotoilemaan uusiksi kaikki kohdat jossa oli käytetty ensimmäistä
+personamuotoa. Sitä ei pitäisi enää esiintyä.
+
 \newpage
 
 \section{Johdanto}
@@ -24,76 +27,102 @@ mittakaavassa \citep{Boehm2005}.
 Suuret yritykset toimivat usein perinteisten ohjelmistotuotannon mallien
 mukaisesti. Nämä mallit pyrkivät optimoimaan toimintaa tarkalla suunnittelulla
 ja prosessien määrittelyllä. Tämänlainen lähtökohta soveltuu kuitenkin huonosti
-ohjelmistosuunnitteluun, sillä kehitysprojekteissa tulee lähes poikkeuksetta
-tilanteita joita on mahdotonta tai liian työlästä ennustaa \citep{Schwaber2002}.
+ohjelmistokehitykseen, sillä kehitysprojekteissa tulee lähes poikkeuksetta
+tilanteita, joita on mahdotonta tai liian työlästä ennustaa \citep{Schwaber2002}.
 Suurimpia ongelmia suunnitelmavetoisissa menetelmissä on vaatimusten muuttamisen
 korkea hinta sekä myöhäinen palaute tuotteen laadusta \citep{Petersen2010}.
-Pitkät julkaisuvälit, muutoksiin vastaamisen kalleus, sekä etäisyys asiakkaista
+Pitkät julkaisuvälit, muutoksiin vastaamisen kalleus sekä etäisyys asiakkaista
 heikentävät yritysten kilpailukykyä. Apua näihin ongelmiin toivotaan löytyvän
 ketterien kehitysmallien soveltamisella.
 
-Tämän työn tavoite on kartoittaa nykyinen tutkimuksen tila ketterien
+Tämän työn tavoite on esittää nykyinen tutkimuksen tila ketterien
 ohjelmistokehitysmenetelmien käyttöönotosta suurissa organisaatioissa,
 tarkastellen erityisesti siihen liittyvää organisaatiomuutosta. Ketterien
-meneteilmien käyttöönotosta on olemassa tutkimuksia, mutta ne keskittyvät
+menetelmien käyttöönotosta on olemassa tutkimuksia, mutta ne keskittyvät
 enimmäkseen pieniin organisaatioihin tai yksittäisiin tiimeihin. Suuret
 organisaatiot mukautuvat uusiin menetelmiin hitaammin, mikä voidaan olettaa
-syyksi siihen että laajaa tutkimusta suuren mittakaavan ketterästä muutoksesta
-ei ole aikaisemmin tehty. Tämä työ on toteutettu mukaillen järjestelmällisen
-kirjallisuustutkimuksen muotoa, kartoittaen olemassa olevia tapaustutkimuksia ja
-kokemusraportteja. Työ osoittaa että ketterien kehitysmenetelmien käyttöönotosta
-isoissa organisaatioissa on olemassa riittävästi ensisijaisia tutkimuksia
-kirjallisuustutkimukseen.
+syyksi siihen, että laajaa tutkimusta suuren mittakaavan ketterästä muutoksesta
+ei ole aikaisemmin tehty.
 
-Tämä työ on jaoteltu seuraavasti:
-Seuraavassa luvussa esittelen aikaisempia tutkimuksia liittyen tähän työhön,
-sekä perustelen työn merkityksen. Luvussa \ref{sec:menetelma} esittelen
-järjestelmällisen kirjallisuuskatsauksen menetelmän jota olen käyttänyt
-tutkimuksen suorittamiseen. Luku \ref{sec:tulokset} käsittelee
-kirjallisuuskatsauksen tulokset. Lopuksi esittelen tuloksista tehdyt
-johtopäätökset sekä teen yhteenvedon työstä.
+Tämä työ on toteutettu mukaillen järjestelmällisen kirjallisuustutkimuksen
+muotoa, kartoittaen olemassa olevat tapaustutkimukset ja kokemusraportit.
+Kandidaatintyön laajuudessa järjestelmällisen kirjallisuustutkimuksen menetelmä
+tulkitaan kokeelliseksi osuudeksi. Työn tulos osoittaa, että ketterien
+kehitysmenetelmien käyttöönotosta isoissa organisaatioissa on olemassa
+riittävästi ensisijaisia tutkimuksia kirjallisuustutkimukseen.
+
+\subsection{Tutkimuskysymykset}
+Seuraava tutkimuskysymys on asetettu ohjaamaan kirjallisuustutkimuksen
+suunnittelua sekä tulosten analysointia:
+\textit{Mitkä tekijät vaikuttavat ketterän kehitysmallin organisaatiomuutoksen
+läpiviemiseen isossa organisaatiossa?} Tutkimuskysymys on edelleen jaettu
+kolmeen alla listattuun alakysymykseen.
+
+\begin{itemize}
+\item Miksi organisaatiomuutokseen ryhdytään?
+\item Minkälaisia organisaatiomuutoksia on raportoitu?
+\item Mitkä ovat muutosprosessin menestyksen ja ongelmien tekijät?
+\end{itemize}
+
+\subsection{Työn rajaus}
+Kirjallisuustutkimuksessa huomioitavat lähteet on rajattu tutkimusten tyypin,
+organisaation koon sekä muutosnäkökulman perusteella. Tutkimustyyppinä on
+huomioitu ainoastaan empiirisiä tutkimuksia, eli tapaustutkimuksia, sekä
+kokemusraportteja. Tutkitun organisaation tulee olla riittävän iso, jotta
+voidaan katsoa ketterien menetelmien suuren mittakaavan haasteiden tulevan
+esille \citep{Lindvall2004}. Tutkimukset jotka käsittelevät vain yksittäisiä
+tiimejä on rajattu ulos. Organisaatiolla on oltava määritelty aikaisempi
+toimintamalli siten, että tutkimuksessa esitetään suunnitelmallinen muutos
+ketteriin menetelmiin. Muutoksen lopputilaa tai organisaation uutta
+toimintamallia ei ole syytä rajata mihinkään tiettyyn ketterään menetelmään,
+sillä käsitykset ketteristä menetelmistä saattavat vaihdella tai muutos olla
+vielä kesken.
+
+\subsection{Työn sisältö ja rakenne}
+Luvussa \ref{sec:tausta} esitellään aikaisempia tutkimuksia liittyen tämän työn
+aihealueeseen, sekä todetaan että työ vastaa olemassa olevaan aukkoon
+tutkimuksessa. Luvussa \ref{sec:menetelma} on esitelty järjestelmällisen
+kirjallisuustutkimuksen menetelmä, sekä tapa jolla sitä on sovellettu tämän
+kandidaatintyön kokeellisena osiona. Luvussa \ref{sec:tulokset} käsitellään
+kirjallisuustutkimuksen tulokset. Lopuksi esitellään tuloksista tehdyt
+johtopäätökset sekä työn yhteenveto.
 
 
 % --------------------------------------------------------------------
 
-% ''Motivation and background''
 \section{Työn taustat}
 \label{sec:tausta}
 
 Tämän työn tavoitteena on kuvata ketterien kehitysmenetelmien käyttöönoton
 perusteita, haasteita ja menestyksen tekijöitä. Näitä tekijöitä tarkastellaan
-erityisesti organisaatiomuutossen näkökulmasta. Antaakseni tälle työlle
-taustatietoa esittelen tässä luvussa edellisiä tutkimuksia jotka liittyvät
-suuren mittakaavan ketterään kehitykseen ja ketterien menetelmien käyttöönotton
-haasteisiin.
+erityisesti organisaatiomuutoksen näkökulmasta. Taustatietona työlle tässä
+luvussa esitellään edellisiä tutkimuksia jotka liittyvät suuren mittakaavan
+ketterään kehitykseen, sekä ketterien menetelmien käyttöönotton haasteisiin.
+Tämän työn merkitys suhteessa olemassa olevaan tutkimuskeen perustellaan luvun
+lopuksi.
 
-\subsection{Tämän työn motivointi}
-Ketteristä menetelmien soveltamisesta on julkaistu useita aikaisempia
-tutkimuksia. Myös suuren mittakaavan ketterästä kehityksestä on tutkimuksia,
-kuten myös ketterien menetelminen käyttöönottoon liittyvästä
-organisaatiomuutoksesta. Suureen mittakaavaan tai organisaatiomuutokseen
-liittyvät tutkimukset ovat olleet kyselytutkimuksia tai monitapaustutkimuksia.
-Suuren mittakaavan ketterästä kehityksestä on lisäksi olemassa lukuisia
-tapaustutkimuksia sekä kokemuskertomuksia. Nykyiset julkaisut jättävät selkeän
-aukon yhteenvetävälle kartoitukselle raportoiduista havainnoista suuren
-mittakaavan ketterässä kehityksessä.
+\subsection{Ketterä ohjelmistokehitys}
+--> Yksi kappale joka summaa ketterän ohjelmistokehityksen pääpointit
+(Ketterä ohjelmistokehitys on toki äärettömän laaja alue itsessään, mutta
+tämän työn puitteissa siitä ei kannata selittää kuin yksi kappale. Etsin
+tähän kaksi viitettä, jotka kuvaavat ketterää kehitystä ylipäänsä)
 
 \subsection{Aikaisemmat tutkimukset}
 
+--> Dybån ja Dingsøyrin tutkimuksen lisäksi tehtiin haku ketterien menetelmien
+käyttöönottoa tai suuren mittakaavan soveltamista kuvaavista tutkimuksista.
+--> löytyi 5 kappaletta aikaväliltä 2004-2009
+--> Nämä ovat tämän tutkimuksen aihealueeseen vahvasti liittyviä
+--> Alla on esitelty erityishuomioita kustakin tutkimuksesta
+
 \cite{Dyba2008} ovat julkaisseet ainoan laajan ja järjestelmällisen
 kirjallisuustutkimuksen joka yleisellä tasolla tarkastelee ketterää
-ohjelmistokehitykstä. Tutkimuksen tuloksena todettiin muun muassa että ketteriä
+ohjelmistokehitykstä. Tutkimuksen tuloksena todettiin muun muassa, että ketteriä
 menetelmiä on vaikea soveltaa isommassa mittakaavassa kuin ''pienet tiimit''.
 --> 7 tutkimusta 36 käsittelivät ketterän menetelmän käyttöönottoa.
 --> Extreme Programming oli lähes ainoa menetelmä josta oli tehty tutkimusta.
 --> Tutkimuksen tekijät suosittelivat suositun Scrum-menetelmän tutkimista.
 \citep{Dyba2008}
-
-Dybån ja Dingsøyrin tutkimuksen lisäksi tein haun ketterien menetelmien
-käyttöönottoa tai suuren mittakaavan soveltamista kuvaavista tutkimuksista.
---> löytyi 5 kappaletta aikaväliltä 2004-2009
---> Nämä ovat tämän tutkimuksen aihealueeseen vahvasti liittyviä
---> Alla esittelen erityishuomioita kustakin tutkimuksesta
 
 \citep{Lindvall2004}:
 --> Kvalitatiivista dataa neljästä organisaatiosta. \newline
@@ -161,82 +190,74 @@ haettiin, vaan kaikki tekijät vaikuttavat yhtä tärkeiltä muutoksen kannalta
 
 \subsection{Yhteenveto aikaisemmista tutkimuksista}
 
---> Tärkeimmät teemat yhteenvetona:
+--> Tärkeimmät teemat yhteenvetona. Jos pystyy petaamaan pohjaa tulosten
+keskeisimmistä havainnoista, niin hyvä.
 
---> Organisaatiokulttuurin muuttaminen
-
+--> Organisaatiokulttuurin muuttaminen \newline
 --> Koulutus
+
+% Tässä oli ennen ''työn motivointi'', eli tutkimusaukon määrittely
+\subsection{Uuden tutkimuksen tarve}
+Kuten yllä havattiin, ketteristä menetelmien soveltamisesta on julkaistu useita
+aikaisempia tutkimuksia. Myös suuren mittakaavan ketterästä kehityksestä on
+tutkimuksia, kuten myös ketterien menetelminen käyttöönottoon liittyvästä
+organisaatiomuutoksesta. Suureen mittakaavaan tai organisaatiomuutokseen
+liittyvät tutkimukset ovat enimmäkseen olleet primääritkimuksia, mukaan lukien
+tapaustutkimuksia sekä kokemuskertomuksia. Laajaa kirjallisuustutkimiusta
+keterän kehitysmallin käyttöönottoon liittyvään organisaatiomuutokseen ei ole
+tehty. Näin ollen nykyiset julkaisut jättävät selkeän aukon yhteenvetävälle
+kartoitukselle raportoiduista havainnoista suuren mittakaavan ketterässä
+kehityksessä.
 
 % --------------------------------------------------------------------
 
 \section{Tutkimusmenetelmä}
 \label{sec:menetelma}
 
-Tässä luvussa esittelen työn lähtökohdat tutkimuskysymysten sekä työn rajauksen
-näkökulmista. Esittelen myös järjestelmällisen kirjallisuustutkimuksen
-menetelmän, ja kuvaan miten olen soveltanut sitä tähän työhön.
+Tässä luvussa esitellään työssä käytetty järjestelmällisen
+kirjallisuuskatsauksen tutkimusmenetelmä. Ensiksi esitellään menetelmän
+periaatteet, ja kuvataan miten sitä on mukautettu soveltumaan kandidaatintyöhön.
+Tämän jälkeen esitellään menetelmän vaiheiden suorittaminen kandidaatintyön
+kokeellisena osiona.
 
-\subsection{Tutkimuskysymykset}
+\subsection{Järjestelmällisen kirjallisuustutkimuksen menetelmä}
 
-Tämän työn tutkimuskysymyksenä on: \textit{Mitkä tekijät vaikuttavat ketterän
-kehitysmallin organisaatiomuutoksen läpiviemiseen isossa organisaatiossa?}
-Tutkimuskysymys on edelleen jaettu kolmeen alla listattuun alakysymykseen.
-
-\begin{itemize}
-\item Miksi organisaatiomuutokseen ryhdytään?
-\item Minkälaisia organisaatiomuutoksia on raportoitu?
-\item Mitkä ovat muutosprosessin menestyksen ja ongelmien tekijät?
-\end{itemize}
-
-\subsection{Työn rajaus}
-
-Rajaan kirjallisuustutkimuksessa huomioitavat ensisijaiset lähteet materiaalin
-julkaisutyypin, organisaation koon sekä muutosnäkökulman perusteella.
-Julkaisutyyppinä huomioin ainoastaan empiirisiä tutkimuksia, eli
-tapaustutkimuksia, sekä kokemusraportteja. Tutkitun organisaation tulee olla
-riittävän iso, jotta voidaan katsoa että ketterien menetelmien soveltamisen
-erityishaasteet isoissa organisaatioissa tulevat esille \citep{Lindvall2004}.
-Olen rajannut ulos tutkimukset jotka käsittelevät vain yksittäisiä tiimejä.
-Organisaatiolla on myös oltava määritelty aikaisempi toimintamalli siten, että
-tutkimuksessa esitetään suunnitelmallinen muutos ketteriin menetelmiin.
-Muunnoksen lopputilaa tai organisaation uutta toimintamallia ei ole syytä rajata
-mihinkään erityiseen ketterään menetelmään, sillä käsitykset ketteristä
-menetelmistä saattavat vaihdella tai muunnos saattaa olla vielä kesken.
-
-\subsection{Järjestelmällisen kirjallisuuskatsauksen menetelmä}
-
-Tässä työssä käyttämäni tutkimusmenetelmä myötäilee Kitchenhamin esittämää
-mallia ohjelmistotuotannon alan kirjallisuustutkimukseen. Valitun menetelmän
-tavoite on muodostaa yhtenäinen kuva tämänhetkisestä tutkimuksesta työn
-aihealueella. Kirjallisuustutkimuksen suorittaminen sisältää viisi pääasiallista
+Tässä työssä käytetty tutkimusmenetelmä myötäilee Kitchenhamin esittämää mallia
+ohjelmistotuotannon alan kirjallisuustutkimukseen. Valitun menetelmän tavoite on
+muodostaa yhtenäinen kuva tämänhetkisestä tutkimuksesta työn aihealueella.
+Ohjelmistotuotannon alan kirjallisuustutkimus suoritetaan pääasiallisesti
+tekemällä hakuja elektronisiin tietokantoihin ja arvioimalla hakujen perusteella
+löytynyttä aineistoa. Kirjallisuustutkimuks sisältää viisi pääasiallista
 vaihetta: hakujen suunnittelu, aineiston seulonta, aineiston laadun arviointi,
 tiedon poiminta sekä synteesin tekeminen. \citep{Kitchenham2007}
 
 Järjestelmällisen kirjallisuustutkimukseen kuuluu lisäksi ulkopuolinen
 katselmointi ja systemaattinen tutkimusprotokollan seuraaminen
-\citep{Kitchenham2007}, mutta niiden soveltaminen ylittää tämän työn laajuuden.
+\citep{Kitchenham2007}, mutta niiden soveltaminen ylittää kandidaatintyön
+laajuuden.
 
 \subsection{Hakujen suunnittelu}
 Hakujen suunnittelulla tarkoitetaan käytettävien elektronisten aineistojen
-valintaa ja hakulausekkeiden muodostamista. Elektronisina aineistoina käytin
+valintaa ja hakulausekkeiden muodostamista. Elektronisina aineistoina käytettiin
 seuraavia ohjelmistotuotannon alan julkaisuja hyvin kattavia tietokantoja:
 IEEExplore <link>, ACM <link>, Scopus (ScienceDirect??) <link>, ProQuest <link>.
 Näiden lisäksi suoritin haun <XP~Conference> arkistoon.
 
-Ennen varsinaisten hakujen suorittamista tein esihakuja. Näiden tarkoituksena
-oli kartoittaa hyviä avainsanoja varsinaisiin hakuihin. Käytin muun muassa
-termejä \textit{agile transformation} sekä \textit{large scale agile}.
-Esihakujen perusteella löysin useita aihealueeseen liittyviä tutkimuksia.
+Ennen varsinaisten hakujen suorittamista suoritettiin esihakuja. Näiden
+tarkoituksena oli kartoittaa hyviä avainsanoja varsinaisiin hakuihin. Esihauissa
+käytettiin muun muassa termejä \textit{agile transformation} sekä \textit{large
+scale agile}. Esihakujen perusteella löytyi useita aihealueeseen liittyviä
+tutkimuksia.
 
-Hakulausekkeet ovat boolen logiikalla muodostettavia lausekkeita, jotka
-määräävät avainsanat joiden tulee esiintyä hakutuloksissa. Hakulusekkeita varten
-määrittellään joukko näkökulmia jotka edustavat tutkimuskysymysten aihepiiriä.
-Jokaista näkökulmaa kohden etsitään yleisimmin käytettyjä avainsanoja sekä
-niiden synonyymejä. Lopuksi hakulausekkeet muunnetaan boolen lausekkeiksi
-käyttämällä \texttt{OR}-operattoria avainsanojen välillä, sekä
-\texttt{AND}-operaattoria näkökulmien välillä.
-Taulukko~\ref{table:hakulausekkeet} esittää tässä työssä käytetyt näkökulmat ja
-niitä vastaavat avainsanat.
+Varsinaisissa hauissa käytettävät hakulausekkeet ovat boolen logiikalla
+muodostettavia lausekkeita, jotka määräävät avainsanat joiden tulee esiintyä
+hakutuloksissa. Hakulusekkeita varten määrittellään joukko näkökulmia jotka
+edustavat tutkimuskysymysten aihepiiriä. Jokaista näkökulmaa kohden etsitään
+yleisimmin käytettyjä avainsanoja sekä niiden synonyymejä. Lopuksi
+hakulausekkeet muunnetaan boolen lausekkeiksi käyttämällä
+\texttt{OR}-operattoria avainsanojen välillä, sekä \texttt{AND}-operaattoria
+näkökulmien välillä. Taulukko~\ref{table:hakulausekkeet} esittää tässä työssä
+käytetyt näkökulmat ja niitä vastaavat avainsanat.
 
 \begin{table}
     \begin{tabular}{|l|l|}
@@ -251,33 +272,34 @@ niitä vastaavat avainsanat.
 	\label{table:hakulausekkeet}
 \end{table}
 
-Kaikkia esihaun viitteitä ei löytynyt varsinaisessa haussa. Tämä johtuu siitä
+Kaikkia esihaun viitteitä ei löytynyt varsinaisessa haussa. Tämä johtuu siitä,
 että osa tiivistelmistä on epäinformatiivisia, eivätkä sisällä avainsanoja.
 Jotkut viitteet ovat myös otsikoitu epämääräisesti tai kekseliäästi, jonka takia
 täsmällinen hakulausekke ei löydä niitä. Esihekujen löytämät viitteet olivat
-kuitenkin selkeästi oleellisia, joten liitin ne varsinaisten hakujen kanssa
-käsiteltävään aineistoon.
+kuitenkin selkeästi oleellisia, joten ne on liitetty varsinaisilla hauilla
+kerättyyn aineistoon.
 
 \subsection{Aineiston seulonta}
 
-Kun suunnitellut haut on suoritettu on koottujen viitteiden joukosta sulottava
+Kun suunnitellut haut on suoritettu on koottujen viitteiden joukosta seulottava
 ne tutkimukset jotka ovat oleellisia kirjallisuustutkimuksen kannalta. Tämän
-työn puitteissa suoritin seulonnan kahdella tasolla: ensiksi otsikon
-perusteella, ja sitten tiivistelmän perusteella. Otsikon perusteella hylkäsin
-vain selkeästi aihealueeseen kuulumattomat lähteet, sillä havaitsin että useat
-oleellisilta vaikuttavat työt olivat otsikoitu epäselvästi. Otsikon perusteella
-valitsin 117 lähdettä. Tiivistelmän perusteella arvioin lähteen kolmesta
-näkökulmasta: ketterä ohjelmistokehitys, suuri organisaatio tai monta tiimiä ja
-toimintatapojen muutos. Tarkempaan tarkasteluun valitsin vain ne lähteet jotka
+työn puitteissa seulonta suoritettiin kahdella tasolla: ensiksi otsikon
+perusteella, ja sitten tiivistelmän perusteella. Otsikon perusteella hylättiin
+vain selkeästi aihealueeseen kuulumattomat lähteet, sillä useat oleellisilta
+vaikuttavat työt olivat otsikoitu epäselvästi. Otsikon perusteella valittiin 117
+lähdettä. Tiivistelmän perusteella lähteet arvioitiin kolmesta näkökulmasta:
+ketterä ohjelmistokehitys, suuri organisaatio tai monta tiimiä ja
+toimintatapojen muutos. Tarkempaan tarkasteluun valittiin vain ne lähteet jotka
 tiivistelmän perusteella käsitelivät kaikkia kolmea näkökulmaa. Tällä
-menetelmällä valitsin tarkempaan tarkasteluun 33 lähdettä.
+menetelmällä tarkempaan tarkasteluun valittiin 33 lähdettä.
 
 \subsection{Tiedon poiminta}
 
 Valitut ensisijaiset tutkimukset arvioidaan poimimalla niistä oleelliset tiedot.
 Tiedon poimintaan käytetään tiedonkeruulomaketta, joka täytetään kutakin
-tarkempaan tarkasteluun valittua lähdettä kohden. Tässä työssä käytin taulukossa
-\ref{table:dataform} listattuja kenttiä.
+tarkempaan tarkasteluun valittua lähdettä kohden. Tämän työn
+tiedonkeruulomakkeessa käytettiin taulukossa \ref{table:dataform} listattuja
+kenttiä.
 
 \begin{table}
     \begin{tabular}{|l|l|}
@@ -317,28 +339,27 @@ tarkempaan tarkasteluun valittua lähdettä kohden. Tässä työssä käytin tau
 \end{table}
 
 
-\vspace{1cm}
-\textbf{Muita juttuja / ideoita ??}
-
---> Esihaut: IEEE, hakusanat --> Löytyi muutamia jotka eivät ole mukana muuten?
-
---> Viitteiden validiteetti (kuinka suuri luottamus)
-
 % --------------------------------------------------------------------
 
 \section{Tulokset}
 \label{sec:tulokset}
 
-Tässä luvussa esittelen synteesin ensisijaisista tutkimuksista poimituista
-tiedoista. \sout{Luvussa \ref{sec:menetelma} esittelin järjestelmällisen
-kirjallisuustutkimuksen menetelmän ja listasin sen avulla lähdemateriaalista
-poimitut tiedot} \citep{Kitchenham2007}.
+Tässä luvussa esitellään synteesi ensisijaisista tutkimuksista ja raporteista
+poimituista tiedoista. Lähteiden keruu ja tietojen poiminta on suoritettu
+myötäillen luvussa \ref{sec:menetelma} esitetyä Kitchenhamin
+kirjallisuustutkimuksen menetelmää \citep{Kitchenham2007}. Luvun alussa
+esitellään analysoitujen lähteiden kvantitatiiviset tiedot. Tämän jälkeen
+esitellään synteesin avulla tehdyt oleellisimmat havainnot.
 
+\vspace{1cm}
+------------------------------------------------------------------\newline
 --> Tällä hetkellä on kaikki haut suotitettu. Noin puolet valituista viitteistä
 on analysoitu. Kun kaikki viitteet on analysoitu teen tähän yhteenvedon
 tuloksista.
 
 --> Millä aikavälillä tutkimuksia on tehty
+
+--> Viitteiden validiteetti (kuinka suuri luottamus)
 
 --> Suosituimmat syyt lähteä muutokseen
 
@@ -361,7 +382,7 @@ tuloksista.
 oerganisaatiotyypit / mitkä menetelmät / enemmän perusteita miksi ?? 
 
 --> Jatkotutkimukset
---> Pitää tehdä kirjallisuuskatsaus seuraten huolellisesti jotakin
+--> Pitää tehdä kirjallisuustutkimus seuraten huolellisesti jotakin
 kijallisuustutkimuksen menetelmää. Jotta sain järjestelmällisen
 kirjallisuustutkimuksen sovitettua kandidaatintyön laajuuteen jouduin
 karsimaan useita oleellisia menetelmään kuuluvia muodollisuuksia.
