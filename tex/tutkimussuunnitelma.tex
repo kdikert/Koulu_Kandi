@@ -1,13 +1,21 @@
-\documentclass[12pt,a4paper,finnish,oneside]{article}
 
-% Valitse 'input encoding':
-%\usepackage[latin1]{inputenc} % merkistökoodaus, jos ISO-LATIN-1:tä.
-\usepackage[utf8]{inputenc}   % merkistökoodaus, jos käytetään UTF8:a
+
+\documentclass[12pt,a4paper,finnish,oneside]{article}
+%\documentclass[12pt,a4paper,finnish,twoside]{article}
+%\documentclass[12pt,a4paper,finnish,oneside,draft]{article}
+
+\usepackage[utf8]{inputenc}
+
 % Valitse 'output/font encoding':
 %\usepackage[T1]{fontenc}      % korjaa ääkkösten tavutusta, bittikarttana
 \usepackage{ae,aecompl}       % ed. lis. vektorigrafiikkana bittikartan sijasta
+
 % Kieli- ja tavutuspaketit:
-\usepackage[finnish]{babel}
+\usepackage[english,swedish,finnish]{babel}
+
+% Kurssin omat asetukset aaltosci_t.sty:
+%\usepackage{aaltosci_t}
+
 % Muita paketteja:
 % \usepackage{amsmath}   % matematiikkaa
 \usepackage{url}       % \url{...}
@@ -21,13 +29,19 @@
 \topmargin 0mm
 \headheight 0mm
 \headsep 0mm
-\textheight 246.2mm
+\textheight 226.2mm
+
+%\bibpunct{(}{)}{;}{a}{,}{,}    % a = tekijä-vuosi (author-year)
 
 \pagestyle{plain}
 
 % ---------------------------------------------------------------------
 
 \begin{document}
+
+\selectlanguage{finnish}
+\pagestyle{plain}
+\pagenumbering{arabic}
 
 % Otsikkotiedot: muokkaa tähän omat tietosi
 
@@ -149,14 +163,17 @@ että työn eri osa-alueita tehdään käytännössä lomittain.
 Joudun palauttamaan työni jo marraskuun puolella, sillä minulla on työsopimus
 joka edellyttää sen.
 
-\begin{tabular}{|p{30mm}|p{120mm}|}
-\hline
+\begin{table}[h]
+    \begin{tabular}{|l|l|}
+	\hline
     Tavoite   & päivämäärä \\ \hline
     aiheeseen perehtyminen   & syyskuun puoliväli \\
     kirjallisuustutkimuksen materiaali  & lokakuun puoliväli \\ 
     kappaleet: johdanto, tausta ja menetelmä   & lokakuun loppu \\ 
     kappaleet: tulokset, yhteenveto   & marraskuun puoliväli \\ 
-\end{tabular}
+	\hline
+	\end{tabular}
+\end{table}
 
 
 \section{Esittäminen}
@@ -165,7 +182,7 @@ Olen ajatellut esittää työn myötäillen ohjelmistotuotannon alan tietelliste
 tutkimusten raporttien muotoa:
 
 (1) Johdanto
-(2) Tausta
+(2) Aihealueen tausta, ja liittyvät tutkimukset
 (3) Tutkimusmenetelmän ja tutkimustyön prosessin kuvaus
 (4) Tulokset
 (5) Yhteenveto
@@ -178,8 +195,9 @@ tutkimusten raporttien muotoa:
 % Tässä on käytetty siis numeroviittausjärjestelmää. 
 % Toinen hyvin yleinen malli on nimi-vuosi-viittaus.
 
+\bibliographystyle{aaltosci_t}
 % \bibliographystyle{plainnat}
-\bibliographystyle{finplain}  % suomi
+%\bibliographystyle{finplain}  % suomi
 %\bibliographystyle{plain}    % englanti
 % Lisää mm. http://amath.colorado.edu/documentation/LaTeX/reference/faq/bibstyles.pdf
 
