@@ -356,8 +356,9 @@ Tässä luvussa esitellään synteesi ensisijaisista tutkimuksista ja raporteist
 poimituista tiedoista. Lähteiden keruu ja tietojen poiminta on suoritettu
 myötäillen luvussa \ref{sec:menetelma} esitetyä Kitchenhamin
 kirjallisuustutkimuksen menetelmää \citep{Kitchenham2007}. Luvun alussa
-esitellään yhteenveto tutkimuksista joita tarkasteltiin. Tämän jälkeen
-esitellään tutkimuskysymyksiin liittyvät oleellisimmat havainnot.
+esitellään yhteenveto tutkimuksista joita tarkasteltiin. Tämän jälkeen annetaan
+yleiskatsaus tutkimuksissa kuvatuista ketteristä menetelmistä. Luvun loppuosa
+käsittelee tutkimuskysymyksiin liittyvät oleellisimmat havainnot.
 
 \subsection{Yhteenveto tutkimuksista}
 
@@ -369,7 +370,7 @@ työntekijoiden laatimia kokemusraportteja. Tämä seikkan valossa tuloksiin on
 suhtauduttava varauksella. Erityisesti raportoituihin ongelmiin (tai niiden
 puuttumiseen) ja positiivisiin tuloksiin on suhtauduttava varauksella.
 
-Kuten kuva \ref{fig:publications} näyttää, kaikki valitut tutkimukset olivat
+Kuten kuva~\ref{fig:publications} näyttää, kaikki valitut tutkimukset olivat
 julkaistu noin kymmenen vuoden sisällä. Tutkittu materiaali esittää nousun
 ketterien menetelmien suosiossa vuoden 2007 kohdalla, mutta julkaisuiden
 lukumäärä vaikuttaa pysyvän tasaisena. Huomattavaa on, että
@@ -387,7 +388,7 @@ soveltamisesta hyvin pian niiden esittelemisen jälkeen.
 \end{figure}
 
 Suurimmassa osassa julkaisuja oli ilmoitettu ajankohta jolloin muutoksen ensi
-askeleet oli otettu. Kuva \ref{fig:start_year} esittää ilmoitetut muutosten
+askeleet oli otettu. Kuva~\ref{fig:start_year} esittää ilmoitetut muutosten
 alkuajankohdat ryhmiteltynä vuosittain. Mediaani muutoksen aloitusajankohdasta
 julkaisuvuoteen oli kolme vuotta. Tämä näkyy verrattavasti julkaisujen kasvun
 nousussa vuonna 2007 ja aloitettujen muutoshankkeiden nousussa vuonna 2004.
@@ -397,17 +398,59 @@ ovat yleistyneet viime vuosikymmenen puolesta välistä alkaen.
 \begin{figure}[htb]
   \begin{center}
     \includegraphics[width=1\textwidth]{img/Transformation_start}
-    \caption{Julkaistut tutkimukset vuosittain}
+    \caption{Organisaatiomuutosten aloitusajankohdat vuosittain}
     \label{fig:start_year}
   \end{center}
 \end{figure}
 
-Kaikkissa tapauksissa organisaatio oli päätynyt jatkamaan ketterän mallin
-käyttämistä. Muutosta oli tyypillisesti toteutettu 1 tai 2 vuotta kun siitä oli
-raportoitu. Suurimmassa osasta tapauksia muutos katsottiin edelleen jatkuvan
-raportin kirjoitusajankohtana.
+\subsection{Käytetyt ketterät menetelmät}
 
---> Suosituimmat menetelmät
+Kaikkissa tapauksissa organisaatio oli päätynyt jatkamaan ketterän mallin
+käyttämistä. Muutoksen vaikutuksia oli tyypillisesti raportoitu 1 tai 2 vuoden
+päähän sen aloittamisesta. Suurimmassa osasta tapauksia muutos katsottiin
+edelleen jatkuvan raportin kirjoitusajankohtana.
+
+Suurin osa tutkimuksta erotteli käytössä olevia ketteriä menetelmiä.
+Taulukko~\ref{table:practices} esittää tutkimuksissa eniten raportoidut
+menetelmät. Ylivoimaisesti suosituin ketterä menetelmä oli Scrum, jota
+mainittiin käytettävän miltei kahdessa kolmesta organisaatiosta. Toiseksi
+suosituin menetelmä oli Extreme Programming (XP). Osassa organisaatioista myös
+kevyt kehitysmalli (engl. lean development) oli yhdistetty ketteriin
+menetelmiin.
+
+\begin{table}[h]
+    \begin{tabular}{|l|l|}
+        \hline
+        Menetelmä       & N   \\ \hline
+        Scrum           & 18 \\ 
+        XP              & 7 \\
+        Lean            & 5 \\
+        Eri menetelmien yhdistely ja räätälöinti & 9  (epäsuorasti mainittuna useampia) \\
+        \hline
+    \end{tabular}
+	\caption{Hauissa käytetyt näkökulmat ja niitä vastaavat avainsanat. Sarake N
+	kuvaa kuinka monessa tutkimuksessa menetelmää mainittiin käytettävän.}
+	\label{table:practices}
+\end{table}
+
+Taulukosta~\ref{table:practices} ilmenee myös eri menetelmien yhdistely
+huomattavana trendinä. Lähes kolmanneksessa raporteista mainittiin suoraan, että
+menetelmiä oli yhdistelty. Menetelmien yhdistelemistä ja räätälöintiä oli
+perusteltu pääasiallisesti kahdella tapaa. Osassa raporteista oli syyksi
+mainittu se, että suuren organisaation erityispiirteet tekivät menetelmän
+räätälöinnin välttämättömäksi. Toisaalta yritykset olivat halunneet panostaa
+mahdollisimman hyvän menetelmän löytämiseen, jolloin useita menetelmiä oli
+arvioitu ja niiden sopivimmat piirteet oli yhdistetty.
+
+Edellä mainittujen ketterien mallien lisäksi oli yksittäisiä mainintoja
+seuraavista menetelmistä: JAD (Joint Application Development),
+ASSF\footnote{Katso Qumer \& Henderson-Sellers 2007}, Unified Process, sekä DSDM
+(Dynamic Systems Development Method). Näiden menetelmien lisäksi mainittiin
+erilaisia käytäntöjä mukaan lukien aika-\textbf{XXX???} (engl. time-boxing),
+testivetoinen kehitys, asiakkaan mukanaolo, testauksen automatisointi, sekä
+jatkuva yhdentäminen (engl. continuous integration).
+
+\subsection{Tutkimuskysymyksiin liittyvät havainnot}
 
 \textbf{Miksi organisaatiomuutokseen ryhdytään?}
 
@@ -416,7 +459,7 @@ raportin kirjoitusajankohtana.
 \textbf{Mitkä ovat muutosprosessin menestyksen ja ongelmien tekijät?}
 
 \vspace{1cm}
-\textbf{Ideoita}
+\textbf{Muuta}
 
 --> Viitteiden validiteetti (kuinka suuri luottamus)
 
