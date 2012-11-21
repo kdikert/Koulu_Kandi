@@ -27,10 +27,19 @@
 %\usepackage{algorithm} % algoritmien lisääminen kelluvina
 %\usepackage{algorithmic} % algoritmilistaus
 \usepackage{hyphenat}
-%\usepackage{supertabular,array}  % useampisivuinen taulukko
+\usepackage{supertabular,array}  % useampisivuinen taulukko
 
 % Strikethrough
 \usepackage[normalem]{ulem}
+
+
+% Monta lähdeluoetteloa
+\usepackage{multibib}
+\newcites{pri}{Lähteet}
+
+% Lähteiden listaus ilman lähdeluoetteloa
+\usepackage{bibentry}
+
 
 % Tavutus.
 %\hyphenation{vää-rin me-ne-vi-en sa-no-jen tavu-raja-ehdo-tuk-set}
@@ -157,6 +166,7 @@ line which continues ynd continues}
 
 % Viitetyylitiedosto aaltosci_t.bst; muokattu HY:n tktl-tyylistä.
 \bibliographystyle{aaltosci_t}
+\bibliographystylepri{aaltosci_t}
 
 % Muutetaan otsikko "Kirjallisuutta" -> "Lähteet"
 \renewcommand{\refname}{Lähteet}  % article-tyyppisen
@@ -165,7 +175,12 @@ line which continues ynd continues}
 \addcontentsline{toc}{section}{\refname}  % article
 %\addcontentsline{toc}{chapter}{\bibname}  % book, report
 
-\bibliography{lahteet}
+\bibliographypri{lahteet}
+
+\nobibliography{lahteet_s}
+
+\clearpage
+\input{tutkimukset}
 
 \label{pages:refs}
 \clearpage         % erotetaan mahd. liitteet alkamaan uudelta sivulta
