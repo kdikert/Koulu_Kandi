@@ -576,6 +576,7 @@ suunnitteluväliä neljännesvuoteen, ja ottamalla suunnitteluun mukaan edustaji
 kaikilta organisaation osa-alueilta.
 
 \subsubsection{Konsultointi, koulutus ja muut muutokseen liittyvät sijoitukset}
+\label{sec:investments}
 
 Ulkopuolisten konsulttien käyttö oli hyvin tyypillistä, ja siitä oli raportoitu
 yli puolessa kaikista ensisijaisista tutkimuksista. Konsultteja käytettiin
@@ -713,7 +714,7 @@ Scrum-malliin muuttamatta kuitenkaan todellisia toimintatapoja, mikä ei
 edistänyt toimintamallin muutosta. Maples [S11] kertoo miten kaikkien osapuolten
 kuuleminen ymmärrettiin väärin siten, että tuotteen kehitysjonoon tulvi liikaa
 vaatimuksia, mikä johti vaatimusten kauppaamiseen ja epätehokkaaseen
-priorisointiin. Abernathy [S16] kuvaa miten linjajohtajat ohittivat
+priorisointiin. Abernathy [S16] kuvaa miten linjapäälliköt ohittivat
 tiimikohtaisen projektipäällikön, ja puuttuivat tiimien sisäisiin asioihin,
 mikä johti luottamuspulaan ja haittasi ketterän mallin toteuttamista.
 
@@ -824,8 +825,6 @@ yhteisöllisyydellä ja tiedon jakamisella. Organisaatiossa järjestetään muun
 muassa lounasseminaareja ja koko päivän mittaisia tapahtumia joissa kehitetään
 henkilöstön taitoja.
 
-
-
 \subsubsection{Muutoksen suunnitteleminen ja seuraaminen}
 
 Muutoksessa on oleellista tunnistaa muutoksen tärkeimmät osa-alueet ja keskittyä
@@ -847,18 +846,19 @@ Myös Ryan ja Scudiere [S29]: tiukkojen julkaisupäivien asettaminen antoi
 liiketoiminnalle uskoa pitkien suunnitelmien puuttuessa, ja suuntasi koko
 organisaation yhteistä selkeää tavoitetta kohden.
 
-\subsubsection{Ketterän menetelmän onnistunut soveltaminen}
+\subsubsection{Menetelmien sovittaminen ja yhdenmukaisuus}
 
---> Suunnittele johdon ja esimiesasemissa olevien henkilöiden tehtävät
-(3 viitettä)
-
---> Toteuttavasta portaasta lähtevä menetelmien soveltaminen (4 viitettä).
-Goos ja Melisse [S4]: vaikka johto teki päätöksen muutokseen ryhtymisestä
-muutoksen toteuttamisen lähtökohdat oli tiimitasolla. ???
-
-
---> Menetelmien soveltaminen (5 viitettä).
-Ketterien menetelmien sovittaminen organisaation erityispiirteisiin oli 
+Kirjallisuudessa esiteltyjä menetelmiä kannattaa aina soveltaa organisaation
+tarpeisiin. Erityisesti suuressa mittakaavassa on tarve sovittaa ketteriä
+menetelmiä, sillä niissä otetaan harvoin huomioon suurten organisaatioiden
+erityistarpeita. Muun muassa Maples [S11] kuvaa miten tuotteen kehitysjonon
+käsittelyä sekä korkean tason testausta oli tarve sovittaa. Tärkeä sovittamista
+vaativa osa-alue oli johtajien roolien mukauttaminen ketterään kehitykseen.
+Yi [S20] kuvaa miten linjapäällikön rooli yhdistettiin Scrum-mestarin rooliin.
+Tämä saattaa vaikuttaa ristiriitaiselta, sillä Scrum-mestarin tehtävä on
+pikemmin tiimin avustaminen kuin päällikkönä toimiminen, mutta Yi perustelee
+valintaa sillä, että tiimeistä ei voi tulla itseohjautuvia toimi ellei myös
+johto muuta rooliaan ketteräksi [S20]. 
 
 Useassa tapauksessa raportoitiin yhdenmukaisten toimintatapojen eduista.
 Muun muassa Fry ja Greene [S19] tuo esille yhdenmukaisen sanaston käyttämisen
@@ -872,23 +872,16 @@ Walter [S30] esittävät etuna sen, että selkeästi määritelty prosessi loi
 yhteisen käsitteistön, ja antoi syyn pysyä DSDM-menetelmässä, vaikka uusia
 ketteriä menetelmiä esiteltiin ajan myötä.
 
-
-\subsubsection{Muutokseen sijoittaminen}
-
---> Ulkopuolisten resurssien hyödyntäminen. (2 viitettä)
-
-Koulutus oli tärkeä menestyksen tekijä monessa raportoidussa muutosprosessissa.
-Muun muassa Karlström ja Runeson [S8] kertovat että koulutus oli tärkeä tekijä
-muutosvastarinnan poistamisessa.
-
-Spayd [S13] esittää että koulutus on tärkeää --> empowerment
+\subsubsection{Muutokseen vaatimat sijoitukset}
 
 On selvää että laajan organisaatiomuutoksen läpivieminen vaatii enemmän
 panostuksia kuin organisaation normaali toiminta. Osa-alueita joihin
 panostaminen oli raportoitu erityisen tärkeäksi oli koulutus ja ulkopuolisten
 konsulttien käyttö. Näiden lisäksi oli menestyksen tekijöinä raportoitu
 panostuksia testauksen automatisointiin, jatkuvaan yhdentämiseen sekä
-toimistotilojen muokkaamiseen.
+toimistotilojen muokkaamiseen. Edellä mainittujen tekijöiden soveltamista
+on kuvattu luvussa \ref{sec:investments}.
+
 
 % --------------------------------------------------------------------
 \clearpage
@@ -953,7 +946,7 @@ yleiseen muutoksen johtamiseen.
 
 \clearpage
 \large
-\textbf{Menestyksekkään käyttöönoton tekijöitä}
+\textbf{Menestyksekkään käyttöönoton tekijöitä (tausta)}
 \normalsize
 
 --> Muutoksen ydinalueiden tunnistaminen ja niihin keskittyminen (Misra)
@@ -966,6 +959,27 @@ myös oletettavaa, että osa henkilöstöstä ei halua muuttaa toimintatapojaan.
 Näiden haasteiden selvittäminen vaatii henkilöstön kouluttamista, sekä
 ymmärrystä siitä, miten ihmisten väliset interaktiot luovat sujuvaa
 kommunikaatiota. ? ? ?
+
+\vspace{1cm}
+\large
+\textbf{Menestyksekkään käyttöönoton tekijöitä (tulokset)}
+\normalsize
+
+\textbf{Sovitus}
+
+Menetelmien sovittaminen organisaation erityispiirteisiin on tärkeää, sillä -->
+Goos ja Melisse [S4]: vaikka johto teki päätöksen muutokseen ryhtymisestä
+muutoksen toteuttamisen lähtökohdat oli tiimitasolla. ???
+
+\textbf{Resursointi}
+
+--> Ulkopuolisten resurssien hyödyntäminen. (2 viitettä)
+
+Koulutus oli tärkeä menestyksen tekijä monessa raportoidussa muutosprosessissa.
+Muun muassa Karlström ja Runeson [S8] kertovat että koulutus oli tärkeä tekijä
+muutosvastarinnan poistamisessa.
+
+Spayd [S13] esittää että koulutus on tärkeää --> empowerment
 
 \vspace{1cm}
 \large
